@@ -76,13 +76,6 @@ button:focus,
    opacity: .8;
 }
 
-input[type=button]:hover,
-input[type=button]:focus
-{
-  cursor: pointer;
-  opacity: .8;
-}
-
 a:visited {
   /* visited link */
   color: var(--primary-color);
@@ -180,8 +173,7 @@ a:active {
   text-align: center;
 }
 
-input[type="button"],
-.button {
+%button-shared {
   padding: 10px;
   text-align: center;
   background-color: var(--tertiary-color);
@@ -196,6 +188,10 @@ input[type="button"],
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
+}
+
+.button {
+  @extend %button-shared;
 }
 
 @media all and (max-width: 500px) {
