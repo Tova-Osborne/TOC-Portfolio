@@ -169,11 +169,7 @@ a:active {
   text-align: center;
 }
 
-.work-experience__table {
-  text-align: center;
-}
-
-%button-shared {
+.button {
   padding: 10px;
   text-align: center;
   background-color: var(--tertiary-color);
@@ -188,10 +184,6 @@ a:active {
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
-}
-
-.button {
-  @extend %button-shared;
 }
 
 @media all and (max-width: 500px) {
