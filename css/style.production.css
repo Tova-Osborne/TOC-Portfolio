@@ -60,6 +60,10 @@ a {
   color: var(--tertiary-color);
 }
 
+b {
+  color: var(--tertiary-color);
+}
+
 a:hover, a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
