@@ -169,7 +169,7 @@ a:active {
   text-align: center;
 }
 
-.button {
+%button-shared {
   padding: 10px;
   text-align: center;
   background-color: var(--tertiary-color);
@@ -184,6 +184,10 @@ a:active {
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
+}
+
+.button {
+  @extend %button-shared;
 }
 
 @media all and (max-width: 500px) {
